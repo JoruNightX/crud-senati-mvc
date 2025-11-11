@@ -13,13 +13,15 @@ class Connection {
 
     public static function conectar() {
         global $host, $port, $db_name ,$user ,$pass;
+
         $dsn="mysql:host=$host;port=$port;dbname=$db_name";
+
         self::$pdo = new PDO($dsn, $user, $pass);
 
-        if(!isset(self::$pdo)) {
-            return self::$pdo;
+        
+        return self::$pdo;
         }
 
     }
-}
+
 ?>
