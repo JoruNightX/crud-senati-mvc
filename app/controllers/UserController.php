@@ -1,4 +1,5 @@
 <?php
+
 require_once __DIR__ . '/../models/UserModel.php';
 
 class UserController {
@@ -13,8 +14,10 @@ class UserController {
 
         include __DIR__ . '/../views/listado.php';
 
-    }
-}
+        include __DIR__ . '/../views/agregar.php';
 
+    }
+
+}
 
 ?>
